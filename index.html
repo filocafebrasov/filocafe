@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ro">
-
 <head>
 <meta charset="UTF-8">
 <title>Filo Cafe Brașov</title>
@@ -8,9 +7,9 @@
 <link rel="stylesheet" href="style.css">
 
 <style>
-    .about-text p {
-        text-indent: 2em; /* păstrează aliniatele exact ca în document */
-    }
+.about-text p {
+    text-indent: 2em;
+}
 </style>
 </head>
 
@@ -18,11 +17,15 @@
 
 <!-- NAVBAR -->
 <header class="navbar">
+
     <div class="logo">
         <img src="logo.png" alt="Filo Cafe">
     </div>
 
-    <nav>
+    <!-- MENIU MOBIL -->
+    <div class="mobile-menu-icon" onclick="toggleMenu()">☰</div>
+
+    <nav id="main-menu">
         <ul>
             <li><a href="#hero" data-i18n="nav_home">Acasă</a></li>
             <li><a href="#about" data-i18n="nav_about">Despre</a></li>
@@ -37,6 +40,7 @@
         <button id="lang-ro">RO</button> |
         <button id="lang-en">EN</button>
     </div>
+
 </header>
 
 <!-- HERO -->
@@ -48,13 +52,11 @@
     </div>
 </section>
 
-<!-- DESPRE (fără data-i18n, pentru a nu fi tradus automat) -->
+<!-- DESPRE -->
 <section id="about" class="section">
     <h2 data-i18n="about_title">Despre Filo Cafe</h2>
 
-    <!-- TEXT ROMÂNĂ -->
     <div id="about-text-ro" class="about-text">
-
         <p>De ce Filo Cafe?</p>
 
         <p>
@@ -76,9 +78,7 @@
 
     </div>
 
-    <!-- TEXT ENGLEZĂ -->
     <div id="about-text-en" class="about-text" style="display:none;">
-
         <p>Why Filo Cafe?</p>
 
         <p>
@@ -98,8 +98,8 @@
             And why not start the conversation with <i>Filo</i>?
         </p>
 
-    </div>
 
+    </div>
 </section>
 
 <!-- MENIU -->
@@ -203,22 +203,19 @@
     </div>
 </section>
 
-<!-- LOCAȚIE & PROGRAM -->
+<!-- LOCAȚIE -->
 <section id="location" class="section">
     <h2 data-i18n="location_title">Locație & Program</h2>
 
     <p>
-    <span data-i18n="location_address">
-        Adresa: Str. Gheorghe Barițiu nr. 26, Brașov (BV)
-    </span>
-
-    <a href="https://maps.app.goo.gl/Z9EzxRxtNqgg6wt87" target="_blank">
-        <img src="location.png" alt="Locație" 
-             style="width:18px; vertical-align:middle; margin-left:6px;">
-    </a>
-</p>
-
-
+        <span data-i18n="location_address">
+            Adresa: Str. Gheorghe Barițiu nr. 26, Brașov (BV)
+        </span>
+        <a href="https://maps.app.goo.gl/Z9EzxRxtNqgg6wt87" target="_blank">
+            <img src="location.png" alt="Locație"
+            style="width:18px; vertical-align:middle; margin-left:6px;">
+        </a>
+    </p>
 
     <p data-i18n="location_schedule">
         Program: Luni–Joi: 08:00–21:00<br>
@@ -252,6 +249,5 @@
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>

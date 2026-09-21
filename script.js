@@ -37,3 +37,25 @@ btnEN.addEventListener("click", async () => {
     const dict = await loadTranslations("en");
     applyTranslations(dict);
 });
+
+// MENIU MOBIL (hamburger)
+function toggleMenu() {
+    const menu = document.querySelector("nav ul");
+    menu.classList.toggle("active");
+}
+
+// LIGHTBOX GALERIE
+const galleryItems = document.querySelectorAll(".gallery-item");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+
+galleryItems.forEach(item => {
+    item.addEventListener("click", () => {
+        lightboxImg.src = item.src;
+        lightbox.style.display = "flex";
+    });
+});
+
+lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
