@@ -1,0 +1,68 @@
+{
+    "nav_home": "Home",
+    "nav_about": "About",
+    "nav_menu": "Menu",
+    "nav_gallery": "Gallery",
+    "nav_location": "Location & Hours",
+    "nav_contact": "Contact",
+
+    "hero_title": "Filo Cafe",
+    "hero_subtitle": "Good coffee, warm atmosphere and a view of the Black Church",
+    "cta_button": "See the menu",
+
+    "about_title": "About Filo Cafe",
+
+    "menu_title": "Menu",
+    "menu_coffee": "Coffee",
+    "menu_tea": "Tea",
+    "menu_chocolate": "Hot Chocolate",
+    "menu_softdrinks": "Soft Drinks",
+    "menu_snacks": "Snacks",
+    "menu_alcohol": "Alcoholic Drinks",
+
+    "coffee_espresso": "ESPRESSO / Long / Americano / Double",
+    "coffee_macchiato": "ESPRESSO MACCHIATO",
+    "coffee_tonic": "ESPRESSO TONIC",
+    "coffee_freddo": "FREDDO ESPRESSO",
+    "coffee_cappuccino": "CAPPUCCINO",
+    "coffee_flatwhite": "FLAT WHITE",
+    "coffee_latte": "LATTE",
+    "coffee_frappe": "CAFFE FRAPPE",
+
+    "tea_fruit": "Fruit teas",
+    "tea_plants": "Herbal teas",
+    "tea_green": "Green teas",
+    "tea_black": "Black teas",
+
+    "choc_normal": "Hot chocolate",
+    "choc_white": "White hot chocolate",
+
+    "soft_lemonade": "Lemonade",
+    "soft_orange": "Orangeade",
+    "soft_water": "Still / sparkling water",
+    "soft_soda": "Cola / Fanta / Sprite",
+
+    "snack_gofre": "Waffles",
+    "snack_arahide": "Peanuts",
+    "snack_chips": "Potato chips",
+
+    "alcohol_beer": "Beer",
+    "alcohol_rum": "Rum",
+    "alcohol_whiskey": "Whiskey",
+    "alcohol_irishcoffee": "Irish Coffee",
+    "alcohol_cubalibre": "Cuba Libre",
+    "alcohol_espressogintonic": "Espresso Gin Tonic",
+    "alcohol_gintonic": "Gin Tonic",
+
+    "gallery_title": "Photo Gallery",
+
+    "location_title": "Location & Hours",
+    "location_address": "Address: Gheorghe Barițiu Street no. 26, Brașov (BV)",
+    "location_schedule": "Hours: Monday–Thursday: 08:00–21:00 | Friday–Sunday: 08:00–22:00",
+
+    "contact_title": "Contact",
+    "contact_phone": "Phone: 0734 650 928",
+    "contact_email": "Email: filo.cafe.brasov@gmail.com",
+    "social_instagram": "Instagram",
+    "social_facebook": "Facebook"
+}

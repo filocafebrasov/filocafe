@@ -1,199 +1,252 @@
 <!DOCTYPE html>
 <html lang="ro">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Filo Cafe Brașov</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Filo Cafe Brașov</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+
+<style>
+    .about-text p {
+        text-indent: 2em; /* păstrează aliniatele exact ca în document */
+    }
+</style>
 </head>
 
 <body>
-  <!-- NAVBAR -->
-  <header class="navbar">
+
+<!-- NAVBAR -->
+<header class="navbar">
     <div class="logo">
-      <img src="logo.png" alt="Filo Cafe">
+        <img src="logo.png" alt="Filo Cafe">
     </div>
 
     <nav>
-      <ul>
-        <li><a href="#hero" data-i18n="nav_home">Acasă</a></li>
-        <li><a href="#about" data-i18n="nav_about">Despre</a></li>
-        <li><a href="#menu" data-i18n="nav_menu">Meniu</a></li>
-        <li><a href="#gallery" data-i18n="nav_gallery">Galerie</a></li>
-        <li><a href="#location" data-i18n="nav_location">Locație</a></li>
-        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
-      </ul>
+        <ul>
+            <li><a href="#hero" data-i18n="nav_home">Acasă</a></li>
+            <li><a href="#about" data-i18n="nav_about">Despre</a></li>
+            <li><a href="#menu" data-i18n="nav_menu">Meniu</a></li>
+            <li><a href="#gallery" data-i18n="nav_gallery">Galerie</a></li>
+            <li><a href="#location" data-i18n="nav_location">Locație & Program</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+        </ul>
     </nav>
 
     <div class="lang-switch">
-      <button id="lang-ro">RO</button> |
-      <button id="lang-en">EN</button>
+        <button id="lang-ro">RO</button> |
+        <button id="lang-en">EN</button>
     </div>
-  </header>
+</header>
 
-  <!-- HERO -->
-  <section id="hero" class="hero">
+<!-- HERO -->
+<section id="hero" class="hero">
     <div class="hero-content">
-      <h1 data-i18n="hero_title">Filo Cafe Brașov</h1>
-      <p data-i18n="hero_subtitle">
-        Cafea de specialitate, atmosferă cozy și priveliște spre centrul vechi al Brașovului.
-      </p>
-      <a href="#menu" class="btn" data-i18n="cta_button">Vezi meniul</a>
+        <h1 data-i18n="hero_title">Filo Cafe</h1>
+        <p data-i18n="hero_subtitle">Cafea bună, atmosferă caldă și vedere spre Biserica Neagră</p>
+        <a href="#menu" class="btn" data-i18n="cta_button">Vezi meniul</a>
     </div>
-  </section>
+</section>
 
-  <!-- DESPRE -->
-  <section id="about" class="section">
+<!-- DESPRE (fără data-i18n, pentru a nu fi tradus automat) -->
+<section id="about" class="section">
     <h2 data-i18n="about_title">Despre Filo Cafe</h2>
-    <p data-i18n="about_text">
-      Filo Cafe este un spațiu dedicat celor care iubesc cafeaua bună, conversațiile liniștite
-      și un design cald, urban.
-    </p>
-  </section>
 
-  <!-- MENIU — COMPLET, PE DOUĂ COLOANE -->
-  <section id="menu" class="section">
+    <!-- TEXT ROMÂNĂ -->
+    <div id="about-text-ro" class="about-text">
+
+        <p>De ce Filo Cafe?</p>
+
+        <p>
+            Prefixul filo, originar din greaca veche (<i>φίλο</i>), înseamnă prieten, iubitor de, amator de, care preferă și este folosit la compunerea de adjective sau substantive.
+            Cuvinte precum filosof (iubitor de înțelepciune) sau <i>filocalia</i> (iubire de frumusețe) sunt mai vechi, și sunt intrate în vocabularul român din limba greacă.
+            Filolog, filantrop, <i>filogenlez</i>, filotehnic și alte cuvinte astfel compuse au intrat ca neologisme în limba română pe parcursul secolului XIX, cele mai multe pe filiera franceză.
+            Filo este folosit și ca sufix în formarea cuvintelor (<i>francofil</i>, <i>cinefil</i>, <i>bibliofil</i>, <i>hidrofil</i>).
+        </p>
+
+        <p>
+            În ceea ce ne privește, pentru că nu există alăturarea între filo și cafea, deși iubitori de cafea sunt din belșug, ne-am gândit că FILO CAFE ar fi potrivit,
+            atât pentru că ne place cafeaua dar și pentru că avem o oarecare înclinație spre filologie.
+            Așteptăm deci toți filo... amatorii de ceva să întregească atmosfera, cafeneaua fiind un mediu propice pentru discuții, povești, bârfe, pentru vorbe în general.
+        </p>
+
+        <p>
+            Și de ce să nu începem șirul de vorbe cu filo?
+        </p>
+
+    </div>
+
+    <!-- TEXT ENGLEZĂ -->
+    <div id="about-text-en" class="about-text" style="display:none;">
+
+        <p>Why Filo Cafe?</p>
+
+        <p>
+            The prefix philo (filo in Romanian), originating from ancient Greek (<i>φῐλο</i>), means friend of, lover of, who prefers and is used to compose adjectives or nouns.
+            Words such as philosopher (lover of wisdom) or <i>philolocalia</i> (love for beauty) are older, and entered the Romanian vocabulary from the old Greek language.
+            Philologist, philanthropist, philogerman, philotechnic and other words thus composed entered the Romanian language as neologisms during the 19th century, most of them primarily from French.
+            Philo is also used as a suffix in the formation of words (<i>francophile</i>, <i>cinephile</i>, <i>bibliophile</i>, <i>hydrophile</i>).
+        </p>
+
+        <p>
+            As far as we’re concerned, because the words philo and coffee never met to form a word, although coffee lovers are plentiful, we thought that FILO CAFE would be appropriate,
+            both because we like coffee but also because we have a certain inclination towards philology.
+            So we hope all the philo... lovers to join us and complete the atmosphere, the café being a conducive environment for discussions, stories, gossip, and conversation in general.
+        </p>
+
+        <p>
+            And why not start the conversation with Filo?
+        </p>
+
+    </div>
+
+</section>
+
+<!-- MENIU -->
+<section id="menu" class="section">
     <h2 data-i18n="menu_title">Meniu</h2>
 
     <div class="menu-columns">
 
-      <!-- COLONNA 1 -->
-      <div class="menu-column">
+        <div class="menu-column">
+            <div class="menu-category">
+                <h3 data-i18n="menu_coffee">Cafea</h3>
+                <ul>
+                    <li data-i18n="coffee_espresso">ESPRESSO / Lung / Americano / Dublu</li>
+                    <li data-i18n="coffee_macchiato">ESPRESSO MACCHIATTO</li>
+                    <li data-i18n="coffee_tonic">ESPRESSO TONIC</li>
+                    <li data-i18n="coffee_freddo">FREDDO ESPRESSO</li>
+                    <li data-i18n="coffee_cappuccino">CAPPUCCINO</li>
+                    <li data-i18n="coffee_flatwhite">FLAT WHITE</li>
+                    <li data-i18n="coffee_latte">LATTE</li>
+                    <li data-i18n="coffee_frappe">CAFFE FRAPPE</li>
+                </ul>
+            </div>
 
-        <!-- CAFEA -->
-        <div class="menu-category">
-          <h3 data-i18n="menu_coffee">Cafea</h3>
-          <ul>
-            <li data-i18n="coffee_espresso">ESPRESSO / Lung / Americano / Dublu</li>
-            <li data-i18n="coffee_macchiato">ESPRESSO MACCHIATTO</li>
-            <li data-i18n="coffee_tonic">ESPRESSO TONIC</li>
-            <li data-i18n="coffee_freddo">FREDDO ESPRESSO</li>
-            <li data-i18n="coffee_cappuccino">CAPPUCCINO</li>
-            <li data-i18n="coffee_flatwhite">FLAT WHITE</li>
-            <li data-i18n="coffee_latte">LATTE</li>
-            <li data-i18n="coffee_frappe">CAFFE FRAPPE</li>
-          </ul>
+            <div class="menu-category">
+                <h3 data-i18n="menu_tea">Ceaiuri</h3>
+                <ul>
+                    <li data-i18n="tea_fruit">Ceaiuri de FRUCTE</li>
+                    <li data-i18n="tea_plants">Ceaiuri de PLANTE</li>
+                    <li data-i18n="tea_green">Ceaiuri VERZI</li>
+                    <li data-i18n="tea_black">Ceaiuri NEGRE</li>
+                </ul>
+            </div>
+
+            <div class="menu-category">
+                <h3 data-i18n="menu_chocolate">Ciocolată caldă</h3>
+                <ul>
+                    <li data-i18n="choc_normal">Ciocolată caldă</li>
+                    <li data-i18n="choc_white">Ciocolată caldă albă</li>
+                </ul>
+            </div>
         </div>
 
-        <!-- CEAIURI -->
-        <div class="menu-category">
-          <h3 data-i18n="menu_tea">Ceaiuri</h3>
-          <ul>
-            <li data-i18n="tea_fruit">Ceaiuri de FRUCTE</li>
-            <li data-i18n="tea_plants">Ceaiuri de PLANTE</li>
-            <li data-i18n="tea_green">Ceaiuri VERZI</li>
-            <li data-i18n="tea_black">Ceaiuri NEGRE</li>
-          </ul>
+        <div class="menu-column">
+            <div class="menu-category">
+                <h3 data-i18n="menu_softdrinks">Răcoritoare</h3>
+                <ul>
+                    <li data-i18n="soft_lemonade">LIMONADĂ</li>
+                    <li data-i18n="soft_orange">ORANJADĂ</li>
+                    <li data-i18n="soft_water">Apă plată / minerală</li>
+                    <li data-i18n="soft_soda">Cola / Fanta / Sprite</li>
+                </ul>
+            </div>
+
+            <div class="menu-category">
+                <h3 data-i18n="menu_snacks">Gustări</h3>
+                <ul>
+                    <li data-i18n="snack_gofre">GOFRE</li>
+                    <li data-i18n="snack_arahide">ARAHIDE</li>
+                    <li data-i18n="snack_chips">CHIPSURI CARTOFI</li>
+                </ul>
+            </div>
+
+            <div class="menu-category">
+                <h3 data-i18n="menu_alcohol">Băuturi alcoolice</h3>
+                <ul>
+                    <li data-i18n="alcohol_beer">BERE</li>
+                    <li data-i18n="alcohol_rum">ROM</li>
+                    <li data-i18n="alcohol_whiskey">WHISKEY</li>
+                    <li data-i18n="alcohol_irishcoffee">IRISH COFFEE</li>
+                    <li data-i18n="alcohol_cubalibre">CUBA LIBRE</li>
+                    <li data-i18n="alcohol_espressogintonic">ESPRESSO GIN TONIC</li>
+                    <li data-i18n="alcohol_gintonic">GIN TONIC</li>
+                </ul>
+            </div>
         </div>
-
-        <!-- CIOCOLATA CALDA -->
-        <div class="menu-category">
-          <h3 data-i18n="menu_chocolate">Ciocolată caldă</h3>
-          <ul>
-            <li data-i18n="choc_normal">Ciocolată caldă</li>
-            <li data-i18n="choc_white">Ciocolată caldă albă</li>
-          </ul>
-        </div>
-
-      </div>
-
-      <!-- COLONNA 2 -->
-      <div class="menu-column">
-
-        <!-- RACORITOARE -->
-        <div class="menu-category">
-          <h3 data-i18n="menu_softdrinks">Răcoritoare</h3>
-          <ul>
-            <li data-i18n="soft_lemonade">LIMONADĂ</li>
-            <li data-i18n="soft_orange">ORANJADĂ</li>
-            <li data-i18n="soft_water">Apă plată / minerală</li>
-            <li data-i18n="soft_soda">Cola / Fanta / Sprite</li>
-          </ul>
-        </div>
-
-        <!-- GUSTARI -->
-        <div class="menu-category">
-          <h3 data-i18n="menu_snacks">Gustări</h3>
-          <ul>
-            <li data-i18n="snack_gofre">GOFRE</li>
-            <li data-i18n="snack_arahide">ARAHIDE</li>
-            <li data-i18n="snack_chips">CHIPSURI CARTOFI</li>
-          </ul>
-        </div>
-
-        <!-- BAUTURI ALCOOLICE -->
-        <div class="menu-category">
-          <h3 data-i18n="menu_alcohol">Băuturi alcoolice</h3>
-          <ul>
-            <li data-i18n="alcohol_beer">BERE</li>
-            <li data-i18n="alcohol_rum">ROM</li>
-            <li data-i18n="alcohol_whiskey">WHISKEY</li>
-            <li data-i18n="alcohol_irishcoffee">IRISH COFFEE</li>
-            <li data-i18n="alcohol_cubalibre">CUBA LIBRE</li>
-            <li data-i18n="alcohol_espressogintonic">ESPRESSO GIN TONIC</li>
-            <li data-i18n="alcohol_gintonic">GIN TONIC</li>
-          </ul>
-        </div>
-
-      </div>
 
     </div>
-  </section>
+</section>
 
-  <!-- GALERIE -->
-  <section id="gallery" class="section">
+<!-- GALERIE -->
+<section id="gallery" class="section">
     <h2 data-i18n="gallery_title">Galerie foto</h2>
 
     <div class="gallery-grid">
-      <img src="gallery1.jpg" class="gallery-item" alt="Filo Cafe">
-      <img src="gallery2.jpg" class="gallery-item" alt="Filo Cafe">
-      <img src="gallery3.jpg" class="gallery-item" alt="Filo Cafe">
-      <img src="gallery4.jpg" class="gallery-item" alt="Filo Cafe">
-      <img src="gallery5.jpg" class="gallery-item" alt="Filo Cafe">
-      <img src="gallery6.jpg" class="gallery-item" alt="Filo Cafe">
-      <img src="gallery7.jpg" class="gallery-item" alt="Filo Cafe">
-      <img src="gallery8.jpg" class="gallery-item" alt="Filo Cafe">
-      <img src="gallery9.jpg" class="gallery-item" alt="Filo Cafe">
-      <img src="gallery10.jpg" class="gallery-item" alt="Filo Cafe">
-      <img src="gallery11.jpg" class="gallery-item" alt="Filo Cafe">
+        <img src="gallery1.jpg" class="gallery-item" alt="Filo Cafe">
+        <img src="gallery2.jpg" class="gallery-item" alt="Filo Cafe">
+        <img src="gallery3.jpg" class="gallery-item" alt="Filo Cafe">
+        <img src="gallery4.jpg" class="gallery-item" alt="Filo Cafe">
+        <img src="gallery5.jpg" class="gallery-item" alt="Filo Cafe">
+        <img src="gallery6.jpg" class="gallery-item" alt="Filo Cafe">
+        <img src="gallery7.jpg" class="gallery-item" alt="Filo Cafe">
+        <img src="gallery8.jpg" class="gallery-item" alt="Filo Cafe">
+        <img src="gallery9.jpg" class="gallery-item" alt="Filo Cafe">
+        <img src="gallery10.jpg" class="gallery-item" alt="Filo Cafe">
+        <img src="gallery11.jpg" class="gallery-item" alt="Filo Cafe">
+        <img src="gallery12.jpg" class="gallery-item" alt="Filo Cafe">
     </div>
 
     <div id="lightbox" class="lightbox">
-      <img id="lightbox-img" src="" alt="">
+        <img id="lightbox-img" src="" alt="">
     </div>
-  </section>
+</section>
 
-  <!-- LOCAȚIE -->
-  <section id="location" class="section">
+<!-- LOCAȚIE & PROGRAM -->
+<section id="location" class="section">
     <h2 data-i18n="location_title">Locație & Program</h2>
-    <p data-i18n="location_address">Adresă: Strada Exemplu nr. 1, Brașov</p>
-    <p data-i18n="location_schedule">Program: Luni–Duminică, 08:00–21:00</p>
-  </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section">
+    <p data-i18n="location_address">
+    Adresa: Str. Gheorghe Barițiu nr. 26, Brașov (BV)
+    <a href="https://maps.app.goo.gl/Z9EzxRxtNqgg6wt87" target="_blank">
+        <img src="location.png" alt="Locație" style="width:18px; vertical-align:middle; margin-left:6px;">
+    </a>
+</p>
+
+
+    <p data-i18n="location_schedule">
+        Program: Luni–Joi: 08:00–21:00<br>
+        Vineri–Duminică: 08:00–22:00
+    </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
     <h2 data-i18n="contact_title">Contact</h2>
-    <p data-i18n="contact_phone">Telefon: 07xx xxx xxx</p>
-    <p data-i18n="contact_email">Email: contact@filocafe.ro</p>
-  </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p>&copy; Filo Cafe Brașov</p>
+    <p data-i18n="contact_phone">Telefon: 0734 650 928</p>
+    <p data-i18n="contact_email">Email: filo.cafe.brasov@gmail.com</p>
 
     <div class="social-links">
-      <a href="https://facebook.com/filocafe" target="_blank" class="social-icon">
-        <img src="facebook.png" alt="Facebook">
-        <span data-i18n="social_facebook">Facebook</span>
-      </a>
+        <a href="https://www.instagram.com/filocafebrasov" target="_blank" class="social-icon">
+            <img src="instagram.png" alt="Instagram">
+            <span data-i18n="social_instagram">Instagram</span>
+        </a>
 
-      <a href="https://instagram.com/filocafe" target="_blank" class="social-icon">
-        <img src="instagram.png" alt="Instagram">
-        <span data-i18n="social_instagram">Instagram</span>
-      </a>
+        <a href="https://www.facebook.com/filo.cafe.brasov" target="_blank" class="social-icon">
+            <img src="facebook.png" alt="Facebook">
+            <span data-i18n="social_facebook">Facebook</span>
+        </a>
     </div>
-  </footer>
+</section>
 
-  <script src="script.js"></script>
+<!-- FOOTER -->
+<footer class="footer">
+    <p>&copy; Filo Cafe Brașov</p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>

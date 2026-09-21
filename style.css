@@ -17,7 +17,7 @@ body {
   color: var(--text);
 }
 
-/* NAVBAR – înal?ime redusa */
+/* NAVBAR */
 .navbar {
   position: fixed;
   top: 0;
@@ -63,7 +63,7 @@ body {
   color: var(--caramel);
 }
 
-/* HERO – fotografia vizibila în totalitate */
+/* HERO */
 .hero {
   min-height: 100vh;
   padding: 7rem 8vw 4rem;
@@ -114,7 +114,7 @@ body {
   margin-bottom: 1.5rem;
 }
 
-/* MENIU – stil existent */
+/* MENIU */
 .menu-category {
   margin-bottom: 2rem;
 }
@@ -213,7 +213,7 @@ body {
   color: var(--caramel);
 }
 
-/* MENIU ÎN DOUA COLOANE — ADAUGAT FARA SA MODIFIC STRUCTURA EXISTENTA */
+/* MENIU ÎN DOUA COLOANE */
 .menu-columns {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -229,6 +229,21 @@ body {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+
+  .hero {
+    background-size: cover;
+    padding: 5rem 6vw 3rem;
+    text-align: center;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+
+  .navbar ul {
+    gap: 0.8rem;
+  }
+
   .menu-columns {
     grid-template-columns: 1fr;
   }
